@@ -7,8 +7,8 @@ import { useEffect } from "react";
 
 export default function ProtectedRoute({ children }) {
     // List of routes that do not require authentication
-const publicRoutes = ['/login', '/signup', '/', '/about'];
-    const  auth  = useAuth();
+const publicRoutes = ['/login', '/signup', '/', '/about','/product'];
+    const  {auth}  = useAuth();
     const router = useRouter();
     const currentPath = window.location.pathname;
 
